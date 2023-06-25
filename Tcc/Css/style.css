@@ -9,15 +9,23 @@
   transition: all 0.3s ease-in-out;
 }
 
-body {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 0.3fr);
+::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+  background: rgb(171, 216, 253);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #004fa3;
+  -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+  background: #ffffff;
 }
 
 .container {
-  grid-column: 1/13;
-  grid-row: 1/1;
   overflow: auto;
   background-color: #022d5e;
   color: rgb(110, 179, 232);
@@ -46,12 +54,7 @@ a:hover {
   color: rgb(255, 255, 255);
 }
 
-#ul1:hover {
-  transition: 0.3s;
-  transform: scale(1.2);
-  color: rgb(255, 255, 255);
-}
-#ul2:hover {
+#ul:hover {
   transition: 0.3s;
   transform: scale(1.2);
   color: rgb(255, 255, 255);
@@ -61,54 +64,44 @@ a:hover {
   transform: scale(1.2);
   color: rgb(255, 255, 255);
 }
+
 #ul3 {
   margin-right: 4em;
 }
-#ul4 {
-  margin-right: 4em;
-}
-#ul4:hover {
-  transition: 0.3s;
-  transform: scale(1.2);
-  color: rgb(255, 255, 255);
-}
+
+
 
 ul li:hover {
   color: rgb(255, 255, 255);
 }
 .footer {
-  grid-column: 1/13;
-  grid-row: 12/12;
   text-align: start;
   background-color: #7b90a1;
   color: white;
-  display: grid;
-  grid-template-columns: 80% 20%;
+
   padding: 0.5em;
 }
-.homepg {
-  background-image: url(/outros/cloudbg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 152%;
-  width: 423%;
-  filter: blur(0.4em);
-  margin-bottom: 38em;
+.bg{
+  width:100%;
+  height: 100%;
+}
+.txtprin{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
 }
 .textpg {
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
+  width: 100%;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  color: rgb(255, 255, 255);
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: #88bffd;
 }
 .button {
-  margin-top: 10em;
+  margin-top: 15em;
   background-color: transparent;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 4px;
@@ -142,7 +135,7 @@ ul li:hover {
 }
 
 .rollover:hover .roll-text:first-child {
-  margin-top: -38px;
+  margin-top: -40px;
 }
 .foto1 {
   width: 12em;
@@ -170,34 +163,26 @@ nav {
 
 .icon {
   width: 2.5em;
+  
 }
 .redes {
-  grid-column: 2/3;
+  
   margin-top: 1em;
   margin-left: 10em;
 }
 .contentf {
-  grid-column: 1/2;
+
   margin-left: 4em;
 }
 .logo {
   width: 8em;
 }
 h1 {
-  grid-column: 1/12;
-  grid-row: 2/2;
-  margin-bottom: 2em;
-  margin-top: 2em;
-  margin-left: 0.5em;
+  
   text-align: center;
   font-size: 8vh;
 }
 
-h2 {
-  margin-bottom: 0.5em;
-  margin-top: 1em;
-  margin-left: 0.7em;
-}
 
 #p1 {
   margin-bottom: 0.8em;
@@ -205,24 +190,20 @@ h2 {
 }
 
 #h2Um {
-  grid-column: 3/11;
-  grid-row: 3/3;
   text-align: center;
   font-size: 4vh;
 }
 
 #h2Dois {
-  grid-column: 2/4;
-  grid-row: 5/5;
   text-align: center;
   font-size: 6vh;
+padding-top: 1.2em;
 }
 
 .footer {
-  margin-top: 1vh;
   width: 100%;
   padding: 100px 15%;
-  background: #333;
+  background: #414141;
   color: #efefef;
   display: flex;
 }
@@ -243,64 +224,79 @@ h2 {
   text-decoration: none;
   color: #efefef;
   margin-bottom: 10px;
+
 }
 .logofot {
   width: 15em;
+  float: none;
 }
-.txt {
-  margin: 0.5em;
-  margin-left: 1.5em;
-  font-size: 1.2vh;
-}
+
+
 h3 {
-  margin-left: 1.1em;
-  margin: 0.6;
-  margin-top: 0.5;
   font-size: 2vh;
 }
 
-#text01 {
-  text-align: center;
-  font-size: 2vh;
-}
 
 #servico01 {
-  border: solid 5px rgb(177, 177, 177);
-  border-radius: 5vh;
-  text-align: center;
-  grid-column: 1/3;
-  grid-row: 6/7;
-  text-align: center;
-  background-color: #03658c;
-  color: white;
-  padding: 3vh;
-  width: 29vh;
-  margin-left: 20em;
-  margin-right: 10em;
+  padding: 1vh;
+  width: 60%;
+  margin-top: 8em;
+  margin-bottom: 10em;  
+}
+.cont01{
+  display: flex;
+}
+.txt1 {
+  font-size: 1.5em;
+  padding: 35px;
+  display: flex;
+  
 }
 #servico02 {
-  border: solid 5px rgb(177, 177, 177);
-  border-radius: 5vh;
-  text-align: center;
-  grid-column: 2/3;
-  grid-row: 6/7;
-  text-align: center;
-  background-color: #03658c;
-  color: white;
-  padding: 3vh;
-  width: 29vh;
-  margin-left: 15em; 
+  padding: 1vh;
+  width: 60%;
+  margin-left: 23em;
+  
 }
+.txt1 {
+  font-size: 1.5em;
+  padding: 35px;
 
+  justify-content: flex-start;
+}
 #servico03 {
-  border: solid 5px rgb(177, 177, 177);
-  border-radius: 5vh;
-  grid-column: 3/3;
-  grid-row: 6/7;
-  text-align: center;
-  background-color: #03658c;
-  color: white;
-  padding: 3vh;
-  width: 29vh;
-  margin-left: 5em;
+padding: 1vh;
+}
+.container2{
+  background-color: #88bffd;
+}
+.vos{
+  display: block;
+  max-width: 100%;
+  max-height: 300px;
+}
+.cont02{
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 1vh ;
+}
+.imgv{
+  display: inline-flex;
+  justify-content: flex-end;
+  margin-right: 12em;
+}
+.cont03{
+  display: inline-flex;
+}
+.psico{
+  height: 35vh;
+  margin-left: 2em;
+}
+.vos{
+  height: fit-content;
+}
+.terapia{
+  height: 27vh;
+  margin-left: 10em;
 }
