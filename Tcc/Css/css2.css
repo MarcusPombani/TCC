@@ -142,9 +142,10 @@ ul li:hover {
   #conteudo01 {
     padding: 5vh;
     padding-top: 0;
+    padding-bottom: 32vh;
     font-size: 3vh;
     background-color: rgb(41, 57, 101);
-    color: rgb(199, 196, 196);
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row; 
 }
@@ -167,9 +168,10 @@ h1 {
 }
 
 .img1 {
-    width: 60vh;
-    height: 35vh;
-    border-radius: 2vh;
+    margin-top: 10vh;
+    width: 65vh;
+    height: 40vh;
+    border-radius: 1vh;
 }
 #conteudo02 {
     padding: 5vh;
