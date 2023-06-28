@@ -5,12 +5,6 @@
     box-sizing: border-box;
   }
     
-  .container {
-    overflow: auto;
-    background-color: #022d5e;
-    color: rgb(110, 179, 232);
-    font-size: 2vh;
-  }
   ::-webkit-scrollbar {
     height: 12px;
     width: 12px;
@@ -26,6 +20,13 @@
   ::-webkit-scrollbar-corner {
     background: #ffffff;
   }
+  .container {
+    overflow: auto;
+    background-color: #022d5e;
+    color: rgb(110, 179, 232);
+    font-size: 2vh;
+  }
+  
   nav {
     float: right;
   }
@@ -70,9 +71,53 @@
   
   
   
-  #ul #li:hover {
+  ul li:hover {
     color: rgb(255, 255, 255);
   }
+
+main {
+  background-color:  #88bffd;
+}
+h1 {
+  text-align: center;
+  color: #ffffff;
+padding-top: 4vh;
+font-size: 10vh;
+}
+.CxDoa {
+  background-color: #004fa3;
+  margin: 4em;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  padding: 1em;
+  color: floralwhite;
+  width: 35%; 
+  font-size: 4vh;
+}
+.Cxona {
+  display: flex;
+  
+}
+.imgs{
+  margin-top: 11%;
+}
+.i1{
+  margin-right: 10vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .footer {
     width: 100%;
     padding: 100px 15%;
@@ -107,19 +152,4 @@
     width: 2.5em;
     margin-top: 2em;
   }
-#inicio {
-  text-align: center;
-}
-#inicio-p {
-  padding: 6vh;
-  font-size: 3vh;
-}
-
-#inicio h1 {
-  font-size: 6vh;
-  padding: 5vh;
-  padding-bottom: 0vh;
-}
-h2 {
-  font-size: 4vh;
-  }
+    
