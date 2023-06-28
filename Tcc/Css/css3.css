@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  * {
+    transition: all 0.3s ease-in-out;
   }
     
   .container {
@@ -107,19 +111,160 @@
     width: 2.5em;
     margin-top: 2em;
   }
-#inicio {
+.inicio {
   text-align: center;
+  padding: 7vh;
 }
-#inicio-p {
-  padding: 6vh;
-  font-size: 3vh;
+.inicio p {
+  font-size: 2.5vh;
+  
+  margin: 7vh;
+  color: #7a7a7a;
 }
 
-#inicio h1 {
-  font-size: 6vh;
-  padding: 5vh;
-  padding-bottom: 0vh;
+.inicio h1 {
+  font-size: 7vh;
+  margin-bottom: 4vh;
+  margin-left: 30vh;
+  margin-right: 30vh;
+ font-weight: bold; 
 }
-h2 {
-  font-size: 4vh;
+.imgmao {
+  width: 70%;
+ height: 35vh;    
+}
+.button {
+ 
+  background-color: transparent;
+  border: 2px solid rgb(250, 186, 9);
+  border-radius: 4px;
+  display: inline-block;
+  color: rgb(245, 197, 6);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  overflow: hidden;
+  padding: 0 22px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(253, 255, 127, 0.225);
   }
+}
+
+.roll-text {
+  display: block;
+  position: relative;
+  transition: all 420ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.roll-text:last-child {
+  color: #474747;
+}
+
+.rollover:hover .roll-text:first-child {
+  margin-top: -40px;
+}
+
+.autismo {
+  text-align: left;
+  margin-left: 3vh;
+}
+#h2Um {
+  font-size: 5vh;
+ margin: 2vh;
+}
+.p-autismo { 
+  font-size: 2vh;
+  color: #7a7a7a;
+}
+#autismo-p2 {
+  margin-right: 50vh;
+}
+.ul{
+  display: flex;
+  flex-direction: column;
+  color: #7a7a7a;
+}
+
+.li1 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1vh;
+  margin-top: 1;
+  margin-bottom: 1;
+  text-align: left;
+  justify-items: center;
+}
+#li-final {
+  padding-bottom: 3vh;
+}
+.colunas {
+  text-align: left;
+  
+}
+.colunas h2{
+  text-align: center;
+  
+}
+.coluna1 {
+  display: flex;
+  flex-direction: row;
+
+}
+.sintomas {
+  padding: 6vh;
+  padding-top: 4vh;
+  padding-bottom: 2vh;
+  margin: 10vh;
+  border: solid 3px rgb(242, 242, 93) ;
+  border-radius: 3vh;
+  background-color: #0353a9;
+  color: #ffffff;
+}
+.recomendacoes {
+  padding: 13vh;
+  padding-top: 4vh;
+  margin: 10vh;
+  border: solid 3px rgb(229, 229, 91) ;
+  border-radius: 3vh;
+}
+.coluna2 {
+  display: flex;
+  flex-direction: row;
+  margin: 3vh;
+}
+.tratamento {
+  padding-top: 3vh;
+  padding-left:1vh;
+  padding-right: 1vh;
+  margin: 6vh;  
+  margin-left:14vh;
+  border: solid 3px rgb(245, 245, 99) ;
+  border-radius: 3vh;
+}
+#pTratamento {
+  text-align: center;
+  padding: 2vh;
+  font-size: 1.6vh;
+}
+
+.diagnostico {
+  padding-left: 5vh;
+  padding-right: 5vh;
+  padding-top: 3vh;
+  margin: 6vh;
+  margin-right: 3vh;
+  border: solid 3px rgb(237, 237, 91) ;
+  border-radius: 3vh;
+  font-size: 2vh;
+}
+
+#pDiagnostico {
+  margin: 3vh;
+}

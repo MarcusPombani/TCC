@@ -4,6 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+* {
+  transition: all 0.3s ease-in-out;
 }
   
 ::-webkit-scrollbar {
@@ -109,13 +113,43 @@ ul li:hover {
   width: 2.5em;
   margin-top: 2em;
 }
-
+  .footer {
+    width: 100%;
+    padding: 100px 15%;
+    background: #414141;
+    color: #efefef;
+    display: flex;
+  }
+  .footer div {
+    text-align: center;
+  }
+  .col-2 {
+    flex-grow: 2;
+    margin-left: 150px;
+  }
+  .footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+  .col-1 a {
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+  
+  }
+  .logofot {
+    width: 15em;
+    float: none;
+  }
   #conteudo01 {
     padding: 5vh;
     padding-top: 0;
-    font-size: 3vh;
+    padding-bottom: 32vh;
+    font-size: 2vh;
     background-color: rgb(41, 57, 101);
-    color: rgb(199, 196, 196);
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row; 
 }
@@ -138,16 +172,17 @@ h1 {
 }
 
 .img1 {
-    width: 60vh;
-    height: 35vh;
-    border-radius: 2vh;
+    text-align: center;
+    width: 65vh;
+    height: 40vh;
+    border-radius: 1vh;
 }
 #conteudo02 {
     padding: 5vh;
     padding-top: 0;
     margin-top: 0;
     margin-left: 6vh;
-    font-size: 2.5vh;
+    font-size: 2vh;
     background-color: rgb(255, 255, 251);
     color: rgb(67, 67, 67);
     display: flex;
