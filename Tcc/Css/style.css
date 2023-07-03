@@ -10,6 +10,7 @@
   transition: all 0.3s ease-in-out;
 }
 
+
 ::-webkit-scrollbar {
   height: 12px;
   width: 12px;
@@ -83,7 +84,6 @@ ul li:hover {
   text-align: start;
   background-color: #7b90a1;
   color: white;
-
   padding: 0.5em;
 }
 .bg{
