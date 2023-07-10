@@ -79,7 +79,7 @@
   }
 
 main {
-  background-color:  #88bffd;
+  background-color:  #a3ccfb;
 }
 h1 {
   text-align: center;
@@ -102,28 +102,15 @@ font-size: 10vh;
   
 }
 .imgs{
-  margin-top: 11%;
+  margin-top: 5%;
 }
 .i1{
   margin-right: 10vw;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   .footer {
     width: 100%;
-    padding: 100px 15%;
+    padding: 4.5vh 15%;
     background: #414141;
     color: #efefef;
     display: flex;
@@ -155,4 +142,130 @@ font-size: 10vh;
     width: 2.5em;
     margin-top: 2em;
   }
+  
+  @media only screen and (max-width: 1000px) {
+    .container {
+      overflow: auto;
+      background-color: #022d5e;
+      color: rgb(110, 179, 232);
+      font-size: 1vh;
+      
+    }
     
+    nav {
+      float: right;
+    }
+    
+    .logo img {
+      float: left;
+      margin-top: 0.8em;
+    }
+    
+    ul li {
+      display: inline-block;
+      padding: 0.8vh;
+      font-size: 1.5vh;
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(134, 189, 231);
+    }
+    a:hover {
+      color: rgb(255, 255, 255);
+    }
+    
+    #ul:hover {
+      transition: 0.3s;
+      transform: scale(1.2);
+      color: rgb(255, 255, 255);
+    }
+    #ul3:hover {
+      transition: 0.3s;
+      transform: scale(1.2);
+      color: rgb(255, 255, 255);
+    }
+    
+    #ul3 {
+      margin-right:2em;
+    }
+    .foto1 {
+      width: 9em;
+      margin-left:18.6em;
+    text-align: center;
+    }
+    
+    
+    ul li:hover {
+      color: rgb(255, 255, 255);
+    }
+    .footer {
+      text-align: start;
+      background-color: #7b90a1;
+      color: white;
+      padding: 0.1em;
+    }
+    .footer {
+      width: 100%;
+      padding: 1.5vh;
+      background: #414141;
+      color: #efefef;
+      display: flex;
+    }
+    .footer div {
+      text-align: center;
+    }
+    .col-2 {
+      flex-grow: 2;
+      margin-left: 1px;
+      display: none;
+    }
+    .footer div h3 {
+      font-weight: 100;
+      
+      letter-spacing: 1px;
+    }
+    .col-1 {
+      display: none;
+    }
+    .col-3{
+      margin-left: 2em;
+    }
+    
+    .logofot {
+      width: 8em;
+      float: none;
+      margin-top: 3em;
+      display: none;
+    }
+    main {
+      background-color:  #a3ccfb;
+    }
+    h1 {
+      text-align: center;
+      color: #ffffff;
+    padding-top: 4vh;
+    font-size: 5vh;
+    }
+    .CxDoa {
+      background-color: #004fa3;
+      margin: 4em;
+      margin-top: 2em;
+      margin-bottom: 3em;
+      padding: 1em;
+      color: floralwhite;
+      width: 35%; 
+      font-size: 4vh;
+      display: none;
+    }
+    .imgs{
+      margin-left: 8.4vh;
+      margin-top: 7%;
+    }
+    .i2{
+      width: 249px;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+    }
+  }

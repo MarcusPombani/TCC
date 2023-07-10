@@ -103,7 +103,7 @@ ul li:hover {
   position: relative;
   text-align: center;
   color: white;
-  background-color: #88bffd;
+  background-color: #a3ccfb;
 }
 .button {
   margin-top: 15em;
@@ -150,10 +150,7 @@ ul li:hover {
 .logo {
   width: 8em;
 }
-#logo1 {
-  width: 9em;
-  margin-right: 62em;
-}
+
 li {
   margin-bottom: 2em;
 }
@@ -203,7 +200,7 @@ padding-top: 1.2em;
 
 .footer {
   width: 100%;
-  padding: 100px 15%;
+  padding: 4.5vh 15%;
   background: #414141;
   color: #efefef;
   display: flex;
@@ -234,8 +231,9 @@ padding-top: 1.2em;
 
 
 h3 {
-  font-size: 2vh;
+  font-size: 3vh;
   padding-bottom: 3vh;
+  font-weight: 700;
 }
 
 
@@ -250,9 +248,9 @@ h3 {
 }
 .txt1 {
   font-size: 1.5em;
-  
+  text-align: justify;
   display: flex;
-  
+  font-weight: 600;
 }
 #servico02 {
   padding: 1vh;
@@ -271,7 +269,7 @@ h3 {
   margin-bottom: 10em;  
 }
 .container2{
-  background-color: #88bffd;
+  background-color: #a3ccfb;
 }
 .vos{
   display: block;
@@ -305,4 +303,272 @@ h3 {
   height: 30vh;
   margin-left: 10em;
   margin-right: 5em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    overflow: auto;
+    background-color: #022d5e;
+    color: rgb(110, 179, 232);
+    font-size: 1vh;
+    
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  .logo img {
+    float: left;
+    margin-top: 0.8em;
+  }
+  
+  ul li {
+    display: inline-block;
+    padding: 0.8vh;
+    font-size: 1.5vh;
+    margin-top: 1.5em;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(134, 189, 231);
+  }
+  a:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  #ul:hover {
+    transition: 0.3s;
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+  }
+  #ul3:hover {
+    transition: 0.3s;
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+  }
+  
+  #ul3 {
+    margin-right:2em;
+  }
+  .foto1 {
+    width: 9em;
+    margin-left:18.6em;
+  text-align: center;
+  }
+  
+  
+  ul li:hover {
+    color: rgb(255, 255, 255);
+  }
+  .footer {
+    text-align: start;
+    background-color: #7b90a1;
+    color: white;
+    padding: 0.1em;
+  }
+  .bg{
+    width:100%;
+    height: 50vh;
+  }
+  .txtprin{
+    position: absolute;
+    top:43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+  .textpg {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #a3ccfb;
+  }
+  .button {
+    margin-top: 2em;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    display: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 9px;
+    font-weight: 600;
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    padding: 0 22px;
+    text-align: center;
+    text-transform: uppercase;
+  
+    
+  }
+  
+  
+  .redes1 {
+    margin-top: 0.5em;
+  }
+  
+  .logo {
+    width: 4em;
+  }
+  
+  li {
+    margin-bottom: 2em;
+  }
+  nav {
+    display: flex;
+  }
+  
+  
+  .icon {
+    width: 2.5em;
+    
+  }
+  .redes {
+    
+    margin-top: 1em;
+    margin-left: 10em;
+  }
+  .contentf {
+  
+    margin-left: 4em;
+  }
+  .logo {
+    width: 8em;
+  }
+  h1 {
+    
+    text-align: center;
+    font-size: 4vh;
+    margin-bottom: 0.5vh;
+  }
+  
+  
+  #p1 {
+    margin-bottom: 0.8em;
+    font-size: 3vh;
+  }
+  
+  #h2Um {
+    text-align: center;
+    font-size: 2vh;
+    margin-top: 0.5vh;
+  }
+  
+  #h2Dois {
+    text-align: center;
+    font-size: 3.2vh;
+  padding-top: 1.2em;
+  }
+  
+  .footer {
+    width: 100%;
+    padding: 1.5vh;
+    background: #414141;
+    color: #efefef;
+    display: flex;
+  }
+  .footer div {
+    text-align: center;
+  }
+  .col-2 {
+    flex-grow: 2;
+    margin-left: 1px;
+    display: none;
+  }
+  .footer div h3 {
+    font-weight: 100;
+    
+    letter-spacing: 1px;
+  }
+  .col-1 {
+    display: none;
+  }
+  .col-3{
+    margin-left: 2em;
+  }
+  
+  .logofot {
+    width: 8em;
+    float: none;
+    margin-top: 3em;
+    display: none;
+  }
+  
+  
+  h3 {
+    font-size:2vh;
+    padding-bottom: 0.5vh;
+  }
+  
+  
+  #servico01 {
+    padding: 1vh;
+    width: 60%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  .cont01{
+    justify-content: center;
+    text-align: center;
+  }
+  .txt1 {
+    font-size: 0.5em;
+    text-align: justify;
+    
+  }
+  #servico02 {
+    margin-left: 0.1vh;
+    margin-top: 5vh;
+  }
+  .txt1 {
+    font-size: 0.9em;
+    
+  }
+  #servico03 {
+    margin-top: 6em;
+    margin-bottom: 10em;  
+  }
+  .container2{
+    background-color: #a3ccfb;
+  }
+  .cont02 {
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .imgv{
+    display: none;
+    justify-content: flex-end;
+    margin-right: 6em;
+  
+  }
+  .cont03{
+    justify-content: center;
+    margin-top: 2.5vh;
+  }
+  .psico{
+    height: 12vh;
+    margin-left: 0.1em;
+    display: none;
+  }
+  .vos{
+    display: none;
+    margin-top: 8vh;
+    width: 12em;
+    height: 12em;
+  }
+  
+  .terapia{
+    height: 10vh;
+    margin-left: 2em;
+    margin-right: 0.5em;
+    display: none;
+  }
 }
